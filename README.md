@@ -902,3 +902,45 @@ ESP:AddButton({
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ttjy9808/item-esp-the-mimic/main/README.md')))()
 	end
 })
+
+
+while true do
+local function createBillboardGui(player)
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = "Username"
+    billboard.Size = UDim2.new(2, 0, 2, 0)
+    billboard.StudsOffset = Vector3.new(0, 3, 0)
+    billboard.AlwaysOnTop = true
+    billboard.LightInfluence = 0
+    billboard.Parent = player.Character.Head
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Name = "Name"
+    textLabel.Text = "TTJY"
+    textLabel.TextColor3 = Color3.new(1, 1, 1)
+    textLabel.TextSize = 20
+    textLabel.Font = Enum.Font.SourceSansBold
+    textLabel.BackgroundTransparency = 1
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.TextColor3 = Color3.new(1, 0, 0)
+    textLabel.Parent = billboard
+    return billboard
+end
+
+local function onPlayerAdded(player)
+    if player.Name == "LNOOBEZEZEZEZE" then
+        createBillboardGui(player)
+    end
+end
+
+for _, player in ipairs(game:GetService("Players"):GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+game:GetService("Players").PlayerAdded:Connect(onPlayerAdded)
+task.wait(50)
+for _,v in pairs(game.Workspace:GetDescendants()) do
+if v.Name == "Username" then
+v:Destroy()
+end
+end
+end
