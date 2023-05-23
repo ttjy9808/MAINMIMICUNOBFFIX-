@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "gay sex hod", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "THE MIMIC SCRIPT BY TTJY", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local tpg = Window:MakeTab({
 	Name = "Teleport Game",
@@ -545,12 +545,28 @@ Chapter2b2:AddButton({
 })
 
 local Section = Chapter2b2:AddSection({
-	Name = "tp to here and there no monster for cursed zone puzzle"
+	Name = "tp to here and you dont have to do cursed 1"
 })
 Chapter2b2:AddButton({
-	Name = "Auto win",
+	Name = "teleport to cursed 2",
 	Callback = function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4079.71,613.7,-968.13)
+	end    
+})
+
+
+local Section = Chapter2b2:AddSection({
+	Name = "remove monster(click before do puzzle)"
+})
+
+Chapter2b2:AddButton({
+	Name = "remove monster trigger",
+	Callback = function()
+		for i, v in pairs(workspace:GetDescendants()) do
+            if v.Parent:IsA("BasePart") and v.Parent.Name == "GAMESTART" then
+                v:Destroy()
+            end
+        end
 	end    
 })
 
