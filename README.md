@@ -638,7 +638,104 @@ local thewithctrail = Window:MakeTab({
 })
 
 local Section = thewithctrail:AddSection({
-	Name = "Not Yet Done"
+	Name = "map 1"
+})
+
+thewithctrail:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		for i, v in pairs(Workspace:GetDescendants()) do
+    if v.Parent:IsA("BasePart") and v.Parent.Name == "Game Teleporter" then
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    		end
+		end
+	end
+})
+
+local Section = thewithctrail:AddSection({
+	Name = "map 2"
+})
+
+thewithctrail:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		for i, v in pairs(Workspace:GetDescendants()) do
+    if v.Parent:IsA("BasePart") and v.Parent.Name == "Game Teleporter" then
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    		end
+		end
+	end
+})
+
+local Section = thewithctrail:AddSection({
+	Name = "map 3"
+})
+
+thewithctrail:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		for i, v in pairs(Workspace:GetDescendants()) do
+    if v.Parent:IsA("BasePart") and v.Parent.Name == "Game Teleporter" then
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    		end
+		end
+	end
+})
+
+local Section = thewithctrail:AddSection({
+	Name = "imagine play online"
+})
+local Section = thewithctrail:AddSection({
+	Name = "here auto get butterfly"
+})
+
+thewithctrail:AddButton({
+	Name = "Auto Butterfly",
+	Callback = function()
+
+local function teleportAndFirePrompt(part)
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+    
+    if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+        local targetCFrame = part.CFrame + (part.CFrame.LookVector * -9)  -- Teleport 10 units behind the part
+        humanoidRootPart.CFrame = targetCFrame
+    end
+end
+
+for i, v in pairs(workspace.GameAI:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Cube.001" then
+        teleportAndFirePrompt(v.Parent)
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+task.wait()
+
+		
+	end    
+})
+
+thewithctrail:AddButton({
+	Name = "tp to fireplace1",
+	Callback = function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2621.90186, 111.203804, 1453.71765, -0.0025562048, -0.0233752616, 0.999723434, 0.000763676129, 0.999726415, 0.0233772844, -0.999996424, 0.000823224895, -0.00253772736)
+	end    
+})
+
+thewithctrail:AddButton({
+	Name = "tp to fireplace2",
+	Callback = function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2426.72583, 185.146057, 1457.37292, -0.0025562048, -0.0233752616, 0.999723434, 0.000763676129, 0.999726415, 0.0233772844, -0.999996424, 0.000823224895, -0.00253772736)
+	end    
 })
 
 local christmas = Window:MakeTab({
