@@ -658,8 +658,25 @@ end
 	end
 })
 
-
-
+Chapter2b2:AddButton({
+    Name = "Auto get cannon ball",
+    Callback = function()
+    while task.wait() do
+		for i, v in pairs(workspace:GetDescendants()) do
+            if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "BallGiver" and game.Players.LocalPlayer.PlayerGui.BossFight.Ammo.Text == "0" then
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+                wait(0.3)
+                fireproximityprompt(v)
+                fireproximityprompt(v)
+                fireproximityprompt(v)
+                fireproximityprompt(v)
+                fireproximityprompt(v)
+                task.wait()
+            end
+end
+	end
+	end
+})
 
 
 
