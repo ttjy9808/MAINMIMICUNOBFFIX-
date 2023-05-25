@@ -573,6 +573,16 @@ Chapter2b2:AddButton({
 local Section = Chapter2b2:AddSection({
 	Name = "auto find child(press again after found once)"
 })
+Chapter2b2:AddButton({
+    Name = "Fix Auto Kidnap(dont have to press again)",
+    Callback = function()
+    	for i,v in pairs(workspace:GetDescendants()) do
+  		if v.Name == "SquidGames" then
+     	v:Destroy()
+     	end
+	end
+    end
+})
 
 Chapter2b2:AddButton({
     Name = "Auto Kidnap",
@@ -609,7 +619,44 @@ Chapter2b2:AddButton({
     end
 })
 
+local Section = Chapter2b2:AddSection({
+	Name = "idk but this for nagisa"
+})
 
+
+Chapter2b2:AddButton({
+    Name = "Anti Nagisa laser",
+    Callback = function()
+    while true do
+		for i, v in pairs(workspace:GetDescendants()) do
+            if v.Name == "POISON" then
+local distance = 100
+
+while true do
+	localplayer = game.Players.LocalPlayer 
+ 	Char = localplayer.Character or workspace:FindFirstChild(localplayer.Name)
+         HRP = Char and Char:FindFirstChild("HumanoidRootPart")
+        if not Char or not HRP then
+           
+        end
+         p = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+         hrd = game.Players.LocalPlayer.Character.HumanoidRootPart
+         py = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y
+         
+    local character = game.Players.LocalPlayer.Character
+    local position = v and v.Position or nil
+    currentPos = Vector3.new(p.x, 100, p.z)
+    if position and (position - character.HumanoidRootPart.Position).Magnitude <= distance then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1982.58,100,-4780.12)
+    end
+    
+    wait(0.1)
+end
+end
+	end
+	end
+	end
+})
 
 
 
