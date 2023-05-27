@@ -943,19 +943,1439 @@ end
 
 
 
+local halloween = Window:MakeTab({
+	Name = "Halloween Trial",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = halloween:AddSection({
+	Name = "Map1"
+})
+
+halloween:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "GrabItem" then
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+task.wait(1)
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Burner" then
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+        fireproximityprompt(v)
+        fireproximityprompt(v)
+        fireproximityprompt(v)
+        fireproximityprompt(v)
+    end
+end
+
+	end    
+})
+
+local Section = halloween:AddSection({
+	Name = "Map2"
+})
+halloween:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
 
 
+	end
+})
+
+halloween:AddButton({
+	Name = "Auto win(Full)",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "bug report",
+	Content = "it not bug dont be dumb,we set it to 1:30",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+		repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text == "1:30"
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.59, 45, -119.63)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.5569, 75, -164.936)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.9275, 76, -116.628)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,100,-132.39)
+task.wait()
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.54,60.91,-132.39)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-35.8623, 61, 6.54341)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.855, 49, -37.8745)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(168.327, 55, -119.483)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.3455, 47, -101.13)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.54,83.33,-67.01)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+success = false
+
+spawn(function()
+    repeat
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.94,66.47,6.76)
+        task.wait()
+    until success == true
+end)
+
+for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "Candle" then
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+
+success = true
+task.wait()
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(180.72, 46, -100.54)
+	end
+})
+local Section = halloween:AddSection({
+	Name = "Map3"
+})
+halloween:AddButton({
+	Name = "Auto win",
+	Callback = function()
+		for i, v in pairs(workspace:GetDescendants()) do
+            if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") then
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+                wait(0.3)
+                fireproximityprompt(v)
+                task.wait()
+            end
+end
+	end
+})
+local Section = halloween:AddSection({
+	Name = "Imagine play online"
+})
+
+halloween:AddButton({
+	Name = "Auto pumpkin",
+	Callback = function()
+		for i, v in pairs(Workspace:GetDescendants()) do
+    	if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+	end
+})
 
 
-
-
-
-
-
-
-
-
-
+halloween:AddButton({
+	Name = "Auto pumpkin(Full)",
+	Callback = function()
+		repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(568.2,100,-210.73)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.Timer.TextLabel.Text == "1:50"
+for i, v in pairs(Workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(568.2,100,-210.73)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.Timer.TextLabel.Text == "1:50"
+for i, v in pairs(Workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(568.2,100,-210.73)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.Timer.TextLabel.Text == "1:50"
+for i, v in pairs(Workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(568.2,100,-210.73)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.Timer.TextLabel.Text == "1:50"
+for i, v in pairs(Workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+repeat
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(568.2,100,-210.73)
+task.wait()
+until game.Players.LocalPlayer.PlayerGui.Timer.TextLabel.Text == "1:50"
+for i, v in pairs(Workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Core" then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
+        fireproximityprompt(v)
+    end
+end
+	end
+})
 
 
 
