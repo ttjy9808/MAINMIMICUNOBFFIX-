@@ -37,13 +37,49 @@ end
 tpg:AddButton({
 	Name = "Chapter 1 map2",
 	Callback = function()
-	game:GetService("TeleportService"):Teleport(0, game:GetService("Players").LocalPlayer)
+	game:GetService("TeleportService"):Teleport(6301638949, game:GetService("Players").LocalPlayer)
 end
 })
 tpg:AddButton({
 	Name = "Chapter 1 nightmare map2",
 	Callback = function()
-	game:GetService("TeleportService"):Teleport(0, game:GetService("Players").LocalPlayer)
+	game:GetService("TeleportService"):Teleport(6480994221, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 map1",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6373539583, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 nightmare map1",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6485055338, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 map2",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6406571212, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 nightmare map2",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6485055836, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 map3",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6425178683, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 2 nightmare map3",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6485056556, game:GetService("Players").LocalPlayer)
 end
 })
 
@@ -534,13 +570,14 @@ local Section = Chapter2b2:AddSection({
 Chapter2b2:AddButton({
 	Name = "Auto win",
 	Callback = function()
-		for i, v in pairs(Workspace:GetDescendants()) do
-    	if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent == "Lever" then
-    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
-    	wait(0.3)
+		for i, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Name == "Lever" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+        wait(0.3)
         fireproximityprompt(v)
-    	end
-		end
+    end
+end
+
 		task.wait(3)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10060,484.1,-9.52)
 	end    
@@ -579,6 +616,16 @@ Chapter2b2:AddButton({
                 v:Destroy()
             end
         end
+	end    
+})
+
+local Section = Chapter2b2:AddSection({
+	Name = "Skip every stage and teleport to kid stage"
+})
+Chapter2b2:AddButton({
+	Name = "teleport to kid",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4373.13,683.73,-2348.58)
 	end    
 })
 
@@ -689,6 +736,8 @@ end
 	end
 	end
 })
+
+
 
 
 
