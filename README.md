@@ -1,3 +1,4 @@
+
 if _G.Key == KEY or KEY == "THEMIMIC-GAY" then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "THE MIMIC SCRIPT BY TTJY", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
