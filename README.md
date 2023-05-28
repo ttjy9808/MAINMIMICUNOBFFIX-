@@ -1,5 +1,5 @@
-
-if _G.Key == KEY or KEY == "THEMIMIC-GAY" then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ttjy9808/themimickey-/main/README.md')))()
+if _G.Key == KEY then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "THE MIMIC SCRIPT BY TTJY", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -24,16 +24,28 @@ end
 })
 
 tpg:AddButton({
-	Name = "Chapter 1",
+	Name = "Chapter 1 map1",
 	Callback = function()
 	game:GetService("TeleportService"):Teleport(6296321810, game:GetService("Players").LocalPlayer)
 end
 })
 
 tpg:AddButton({
-	Name = "Chapter 1 nightmare",
+	Name = "Chapter 1 nightmare map1",
 	Callback = function()
 	game:GetService("TeleportService"):Teleport(6479231833, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 1 map2",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(0, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 1 nightmare map2",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(0, game:GetService("Players").LocalPlayer)
 end
 })
 
@@ -2672,4 +2684,6 @@ v:Destroy()
 end
 end
 end
+else
+
 end
