@@ -82,6 +82,30 @@ tpg:AddButton({
 	game:GetService("TeleportService"):Teleport(6485056556, game:GetService("Players").LocalPlayer)
 end
 })
+tpg:AddButton({
+	Name = "Chapter 3 map1",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6472459099, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 3 nightmare map1",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6688734180, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 3 map2",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6682163754, game:GetService("Players").LocalPlayer)
+end
+})
+tpg:AddButton({
+	Name = "Chapter 3 map3",
+	Callback = function()
+	game:GetService("TeleportService"):Teleport(6682164423, game:GetService("Players").LocalPlayer)
+end
+})
 
 
 local Jigoku = Window:MakeTab({
@@ -737,8 +761,23 @@ end
 	end
 })
 
+Chapter2b2:AddButton({
+	Name = "instance use cannon",
+	Callback = function()
+		local function onKeyPress(input)
+    if input.KeyCode == Enum.KeyCode.E and input.UserInputState == Enum.UserInputState.Begin then
+        for i, v in pairs(workspace:GetDescendants()) do
+            if v:IsA("ProximityPrompt") and v.Parent:IsA("BasePart") and v.Parent.Parent.Name == "CANNON" and v.Parent.Name == "Interact" then
+                fireproximityprompt(v)
+            end
+end
+    end
+end
 
+game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 
+	end
+})
 
 
 
