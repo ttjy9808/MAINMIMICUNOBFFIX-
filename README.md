@@ -1,3 +1,4 @@
+if _G.Key == KEY then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "THE MIMIC SCRIPT BY TTJY", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -2667,6 +2668,7 @@ task.wait(50)
 for _,v in pairs(game.Workspace:GetDescendants()) do
 if v.Name == "Username" then
 v:Destroy()
+end
 end
 end
 end
